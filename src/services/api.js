@@ -30,9 +30,9 @@ http.interceptors.response.use(
   },
   async (error) => {
     console.log(error)
-    if (error && error.message === 'Network Error') {
-      window.location.href = '/500'
-    }
+    // if (error && error.message === 'Network Error') {
+    //   window.location.href = '/500'
+    // }
     const { response, request } = error
     if (response) {
       if (response.status === 401) {
