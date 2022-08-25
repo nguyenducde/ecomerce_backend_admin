@@ -1,4 +1,6 @@
 import axios from 'axios'
+import { toast } from 'react-toastify'
+import { ToastObjects } from 'src/utils/toast/toastObject'
 import { API_URL } from '../config'
 const http = axios.create({
   baseURL: API_URL,
@@ -30,9 +32,9 @@ http.interceptors.response.use(
   },
   async (error) => {
     console.log(error)
-    // if (error && error.message === 'Network Error') {
-    //   window.location.href = '/500'
-    // }
+    if (error && error.message === 'Network Error') {
+      toast.error(error.message, ToastObjects)
+    }
     const { response, request } = error
     if (response) {
       if (response.status === 401) {
