@@ -26,7 +26,7 @@ import settingsService from 'src/services/admin/settingsService'
 import { Badge } from 'react-bootstrap'
 import CIcon from '@coreui/icons-react'
 import { cilArrowLeft } from '@coreui/icons'
-const h2p = require('html2plaintext')
+const parse = require('html-react-parser')
 const Product = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -36,7 +36,6 @@ const Product = () => {
 
   const [id, setId] = useState('')
   const [product, setProduct] = useState({})
-  const [description, setDescription] = useState('')
   useEffect(() => {
     if (match) {
       setId(match.params.id)
@@ -65,8 +64,6 @@ const Product = () => {
     const productData = products.find((product) => product._id.toString() === id)
 
     if (productData) {
-      setDescription(h2p(productData.description))
-
       setProduct(productData)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -106,7 +103,9 @@ const Product = () => {
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell className="py-4">Description </CTableDataCell>
-                  <CTableDataCell className="py-4">{description}</CTableDataCell>
+                  <CTableDataCell className="py-4">
+                    {product.description && parse(product.description)}
+                  </CTableDataCell>
                 </CTableRow>
                 <CTableRow>
                   <CTableDataCell className="py-4">Category </CTableDataCell>
