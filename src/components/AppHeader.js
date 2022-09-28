@@ -52,7 +52,7 @@ const AppHeader = () => {
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink to="/general-settings" component={NavLink}>
+            <CNavLink to="/" component={NavLink}>
               Total Visitors <CBadge color="success">{visitors || 0}</CBadge>
             </CNavLink>
           </CNavItem>
