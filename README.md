@@ -59,6 +59,10 @@ rename .env.copy to .env
 cd kosheli-backend
 npm i
 ```
+
+```
+npm run start
+```
   
   ## Author Contact
   Contact me with any questions!<br>
