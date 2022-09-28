@@ -10,6 +10,7 @@ import {
   CHeaderToggler,
   CNavLink,
   CNavItem,
+  CBadge,
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
@@ -20,6 +21,7 @@ import { logo } from 'src/assets/brand/logo'
 const AppHeader = () => {
   const dispatch = useDispatch()
   const sidebarShow = useSelector((state) => state.sidebarShow)
+  const { visitors } = useSelector((state) => state.settingsReducer.settings)
 
   return (
     <CHeader position="sticky" className="mb-4">
@@ -47,6 +49,11 @@ const AppHeader = () => {
           <CNavItem>
             <CNavLink to="/general-settings" component={NavLink}>
               Settings
+            </CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink to="/general-settings" component={NavLink}>
+              Total Visitors <CBadge color="success">{visitors || 0}</CBadge>
             </CNavLink>
           </CNavItem>
         </CHeaderNav>

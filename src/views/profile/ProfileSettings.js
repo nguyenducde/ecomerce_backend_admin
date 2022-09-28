@@ -9,6 +9,7 @@ import {
   CFormLabel,
   CFormInput,
   CButton,
+  CAlert,
 } from '@coreui/react'
 import { useNavigate } from 'react-router-dom'
 import SubmitButton from 'src/components/page/SubmitButton'
@@ -93,6 +94,7 @@ const ProfileSettings = () => {
                     disabled
                   />
                 </CCol>
+
                 <CCol md={6}>
                   <CFormLabel htmlFor="name">
                     Current Password <span style={{ color: 'red' }}>*</span>
@@ -123,8 +125,13 @@ const ProfileSettings = () => {
                     <InputError>{errors.new_password}</InputError>
                   )}
                 </CCol>
+                <CCol md={12}>
+                  <CAlert color="danger">You can not update the password in demo version.</CAlert>
+                </CCol>
                 <CCol md={12} className="d-flex">
-                  <SubmitButton>Save Changes</SubmitButton>
+                  <CButton disabled>Save Changes</CButton>
+                  {/* <SubmitButton>Save Changes</SubmitButton> */}
+
                   <CButton
                     style={{ marginLeft: '10px' }}
                     type="button"
