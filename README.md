@@ -1,7 +1,6 @@
 # (कोशेली एक्स्प्रेस) Ecommerce Backend
  A Full-Stack ecommerce application that uses latest technologies React, Redux, MongoDB, Nodejs, ExpressJS, Typescript and JWT Authentication that allows user to upload and manage ecommerce data.
  
- ### NOTE:- If you want to setup this project on your local system, you need Kosheli-API, which is a paid :smiling_face_with_tear:
 
 
 <hr>
