@@ -71,5 +71,5 @@ npm run start
   ## License
   This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.<br />
 <hr>
-  Copyright © 2022 [Prajwal R.](https://raiprajwal.com/)
+  Copyright © 2023 [Prajwal R.](https://raiprajwal.com/)
 
