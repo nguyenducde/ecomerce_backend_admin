@@ -11,6 +11,7 @@
   ### demo video:- https://youtu.be/b_xbF_XGIDI
   
   #### API REPO:- https://github.com/Prajwal100/kosheli-api
+  #### FRONTEND REPO:- https://github.com/Prajwal100/kosheli-frontend
 
 
   ## Table of Content
