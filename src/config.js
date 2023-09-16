@@ -8,6 +8,6 @@ export const APP_ENV = 'development'
 //   process.env.REACT_APP_UPLOAD_URL || 'https://kosheli-api.herokuapp.com/api'
 
 //=================== for production===================
-export const API_URL = 'http://localhost:5000'
+export const API_URL = 'https://ecomerce-api-vrfd.onrender.com'
 
 export const UPLOAD_URL = 'https://ecomerce-api-vrfd.onrender.com/api'
