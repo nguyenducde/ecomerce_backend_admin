@@ -21,7 +21,7 @@ import { logo } from 'src/assets/brand/logo'
 const AppHeader = () => {
   const dispatch = useDispatch()
   const sidebarShow = useSelector((state) => state.sidebarShow)
-  const { visitors } = useSelector((state) => state.settingsReducer.settings)
+  const { visitors } = useSelector((state) => state?.settingsReducer?.settings)
 
   return (
     <CHeader position="sticky" className="mb-4">

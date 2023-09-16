@@ -10,7 +10,7 @@ const AppFooter = () => {
       <div className="ms-auto">
         <span className="me-1">Powered by</span>
         <a href="https://github.com/Prajwal100" target="_blank" rel="noopener noreferrer">
-          Prajwal R.
+          Shop Authentic Da Lat
         </a>
       </div>
     </CFooter>

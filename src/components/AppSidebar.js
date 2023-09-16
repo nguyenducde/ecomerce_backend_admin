@@ -31,7 +31,7 @@ const AppSidebar = () => {
     >
       <CSidebarBrand className="d-md-down-none c-brand-logo" to="/">
         <span style={{ marginLeft: 4 }}>
-          <strong>कोशेली एक्स्प्रेस</strong>
+          <strong>Shop Authentic Da Lat</strong>
         </span>
       </CSidebarBrand>
       <CSidebarNav>
